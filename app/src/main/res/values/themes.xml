@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Definición del tema principal de la aplicación -->
+    <style name="Theme.Superheroes" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Colores -->
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+    <!-- Estilos de texto personalizados para el RecyclerView -->
+    <style name="TextAppearance.SuperheroName" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TextAppearance.SuperheroDetail" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#B0BEC5</item>
+    </style>
+
+    <style name="TextAppearance.SuperheroPublisher" parent="@style/TextAppearance.AppCompat.Small">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#90A4AE</item>
+    </style>
+
+</resources>

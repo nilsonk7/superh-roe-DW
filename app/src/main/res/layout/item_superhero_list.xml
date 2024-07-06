@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:elevation="8dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_superhero_placeholder" />
+
+            <TextView
+                android:id="@+id/tvSuperhero"
+                style="?android:textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/ivAvatar"
+                tools:text="Iron Man" />
+
+            <TextView
+                android:id="@+id/tvRealName"
+                style="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:textColorSecondary"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/tvSuperhero"
+                android:layout_toEndOf="@+id/ivAvatar"
+                tools:text="Anthony Stark" />
+
+            <TextView
+                android:id="@+id/tvPublisher"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="?android:textColorTertiary"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tvRealName"
+                tools:text="Marvel" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
